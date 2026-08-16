@@ -1,0 +1,21 @@
+:root {
+  --color-bg: #faf7f5;
+  --color-surface: #ffffff;
+  --color-primary: #c1502e;
+  --color-text: #2b2320;
+  --color-text-muted: #7a6f68;
+  --color-border: #ecdfd8;
+
+  color-scheme: light;
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+}

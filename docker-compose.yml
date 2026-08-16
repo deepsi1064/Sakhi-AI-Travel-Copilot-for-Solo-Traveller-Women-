@@ -1,0 +1,17 @@
+# Redis isn't here: nothing in the app uses it (rate limiting is in-memory,
+# single-process, which is enough for this deployment). Add it back only if
+# something genuinely needs it — see docs/decisions.md.
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: sakhi
+      POSTGRES_PASSWORD: sakhi
+      POSTGRES_DB: sakhi
+    ports:
+      - "5432:5432"
+    volumes:
+      - sakhi_pgdata:/var/lib/postgresql/data
+
+volumes:
+  sakhi_pgdata:
