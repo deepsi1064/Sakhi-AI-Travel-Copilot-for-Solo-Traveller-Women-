@@ -4,6 +4,8 @@ Sakhi is a trip-planning and safety-context copilot for solo female
 travellers in India, and a hands-on learning project for production AI
 agent engineering (MCP, tool calling, guardrails, evaluation, observability).
 
+<img width="1536" height="1024" alt="sakhi architecture" src="https://github.com/user-attachments/assets/cdddaace-15e3-42a5-a782-7fd1ec31965c" />
+
 Start with [docs/architecture.md](docs/architecture.md) for the system
 overview, or [docs/decisions.md](docs/decisions.md) for why things are built
 the way they are.
