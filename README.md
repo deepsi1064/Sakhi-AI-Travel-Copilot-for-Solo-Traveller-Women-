@@ -6,9 +6,7 @@ agent engineering (MCP, tool calling, guardrails, evaluation, observability).
 
 <img width="1536" height="1024" alt="sakhi architecture" src="https://github.com/user-attachments/assets/cdddaace-15e3-42a5-a782-7fd1ec31965c" />
 
-Start with [docs/architecture.md](docs/architecture.md) for the system
-overview, or [docs/decisions.md](docs/decisions.md) for why things are built
-the way they are.
+
 
 ## Quick start
 
@@ -41,22 +39,10 @@ curl -X POST http://localhost:8000/chat \
 ```bash
 cd frontend
 npm install
-cp .env.example .env    # defaults work for local dev
-npm run dev             # http://localhost:5173
+npm run dev             
 ```
 
-Needs the backend running on `http://localhost:8000` (CORS is pre-configured
-for the Vite dev server). See [docs/frontend.md](docs/frontend.md).
 
-## Tests
-
-```bash
-pytest -q
-```
-
-These are offline unit tests (guardrails, tool-call parsing) — no HF token
-needed. For a manual, HF-backed evaluation run, see
-[docs/evaluation.md](docs/evaluation.md).
 
 ## Project layout
 
@@ -77,5 +63,4 @@ Travel MCP, Safety MCP, RAG over a curated knowledge base (pgvector),
 session-scoped Memory (preferences + saved places), guardrails, rate
 limiting, structured logging, React chat UI.
 
-Not yet built: real auth (user accounts). See
-[docs/decisions.md](docs/decisions.md) for what's next.
+
